@@ -1,19 +1,20 @@
-//Create a React app from scratch.
-//Show a single h1 that says "Good morning" if between midnight and 12PM.
-//or "Good Afternoon" if between 12PM and 6PM.
-//or "Good evening" if between 6PM and midnight.
-//Apply the "heading" style in the styles.css
-//Dynamically change the color of the h1 using inline css styles.
-//Morning = red, Afternoon = green, Night = blue.
-
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
-import Heading from "./Heading.jsx";
+ReactDOM.render(<App></App>, document.getElementById("root"));
 
-ReactDOM.render(
-  <div>
-    <Heading></Heading>
-  </div>,
-  document.getElementById("root")
-);
+
+
+//1. Create a new React app.
+//2. Create a App.jsx component.
+//3. Create a Header.jsx component that renders a <header> element
+//to show the Keeper App name in an <h1>.
+//4. Create a Footer.jsx component that renders a <footer> element
+//to show a copyright message in a <p> with a dynamically updated year.
+//5. Create a Note.jsx component to show a <div> element with a
+//<h1> for a title and a <p> for the content.
+//6. Make sure that the final website is styled like the example shown here:
+//https://l1pp6.csb.app/
+
+//HINT: You will need to study the classes in teh styles.css file to appy styling.
