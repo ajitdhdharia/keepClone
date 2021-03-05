@@ -9,28 +9,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-let time = new Date(2021, 1,1, 15);
-let currentTime = time.getHours();
-console.log(currentTime);
-let heading = "";
-let customStyle = {
-  color: ""
-};
-
-if (currentTime >= 0 && currentTime <= 12) {
-  heading = "Good Morning";
-  customStyle.color = "red"
-} else if (currentTime > 12 && currentTime <= 18) {
-  heading = "Good Afternoon";
-  customStyle.color = "green"
-} else {
-  heading = "Good Evening";
-  customStyle.color = "blue"
-}
+import Heading from "./Heading.jsx";
 
 ReactDOM.render(
   <div>
-    <h1 style={customStyle}> {heading} </h1>
+    <Heading></Heading>
   </div>,
   document.getElementById("root")
 );
